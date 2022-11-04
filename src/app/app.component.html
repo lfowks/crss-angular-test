@@ -1,0 +1,16 @@
+
+<div class="content p-5" role="main">
+  <h3>CRSS Angular Test</h3>
+
+  <button [routerLink]="['/todos']" class="btn btn-secondary"> Check Todos</button>
+
+  <router-outlet></router-outlet>
+
+</div>
+
+<!-- Modal -->
+<div *ngIf="showLoading" class="modal fade show" id="loadingDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+  <div class="spinner spinner-border" role="status">
+      <span class="visually-hidden"></span>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<h3>Todo Details</h3>
+<table class="table">
+  <tbody>
+    <tr>
+      <th scope="row">User ID</th>
+      <td>{{todo.id}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Title</th>
+      <td>{{todo.title}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Completed</th>
+      <th scope="row"><span [ngClass]="{'bg-success': todo.completed, 'bg-danger' : !todo.completed }" class="badge">{{ todo.completed ? 'Yes' : 'No' }}</span></th>
+    </tr>
+  </tbody>
+</table>
